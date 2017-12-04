@@ -1,4 +1,6 @@
-﻿Public Class FSpisPred
+﻿Imports System.IO
+
+Public Class FSpisPred
     Private type_search As Integer = 0
 
     Private Sub ShowPredpr()
@@ -63,7 +65,12 @@
     End Sub
 
     Private Sub btn_print_Click(sender As Object, e As EventArgs) Handles btn_print.Click
-        Dim DI_day As IO.DirectoryInfo = New IO.DirectoryInfo(My.Settings.Spis)
+        Dim DI_day As IO.DirectoryInfo = Nothing
+        If Not File.Exists("Setup.ini") Then
+            DI_day  = New IO.DirectoryInfo(My.Settings.Spis)
+        Else 
+            DI_day  = New IO.DirectoryInfo(FConnection.ReadIni("Path", "Path3"))
+        End If
 
         If Not Kremen.SP_GetPredpr.Rows.Count > 0 Then
             Exit Sub
@@ -141,7 +148,13 @@
     End Sub
 
     Private Sub btn_print_all_Click(sender As Object, e As EventArgs) Handles btn_print_all.Click
-        Dim DI_day As IO.DirectoryInfo = New IO.DirectoryInfo(My.Settings.Spis)
+        'Dim DI_day As IO.DirectoryInfo = New IO.DirectoryInfo(My.Settings.Spis)
+        Dim DI_day As IO.DirectoryInfo = Nothing
+        If Not File.Exists("Setup.ini") Then
+            DI_day  = New IO.DirectoryInfo(My.Settings.Spis)
+        Else 
+            DI_day  = New IO.DirectoryInfo(FConnection.ReadIni("Path", "Path3"))
+        End If
 
         If Not Kremen.dt_Predpr.Rows.Count > 0 Then
             Exit Sub

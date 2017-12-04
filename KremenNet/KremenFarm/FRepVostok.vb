@@ -1,4 +1,6 @@
-﻿Public Class FRepVostok
+﻿Imports System.IO
+
+Public Class FRepVostok
 
     Private Sub btn_Close_Click(sender As Object, e As EventArgs) Handles btn_Close.Click
         Me.Close()
@@ -23,7 +25,14 @@
         Dim objBooks As Object
         Dim objSheets As Object
         Dim objSheet As Object
-        Dim DI_day As IO.DirectoryInfo = New IO.DirectoryInfo(My.Settings.VostokDir + "\" + Format(Now.Date, "d"))
+
+        Dim DI_day As IO.DirectoryInfo = Nothing
+        If Not File.Exists("Setup.ini") Then
+            DI_day  = New IO.DirectoryInfo(My.Settings.VostokDir + "\" + Format(Now.Date, "d"))
+        Else
+            DI_day  = New IO.DirectoryInfo(FConnection.ReadIni("Path", "Path1") + "\" + Format(Now.Date, "d"))
+        End If
+        
 
         btn_form.Text = "Ждите..."
         btn_form.Refresh()

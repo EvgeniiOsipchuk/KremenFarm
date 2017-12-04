@@ -17,9 +17,6 @@ Public Class LoginForm
             sbb = New SqlClient.SqlConnectionStringBuilder("Data Source=" & My.Computer.Name _
                                                       & "\" & FConnection.ReadIni("DataBase", "DataSource") & ";Initial Catalog=" _ 
                                                       & FConnection.ReadIni("DataBase", "InitialCatalog") & ";User ID=" & Trim(LoginTextBox.Text))
-            My.Settings.VostokDir = FConnection.ReadIni("Path", "Path1")
-            My.Settings.OpenCase = FConnection.ReadIni("Path", "Path2")
-            My.Settings.Spis = FConnection.ReadIni("Path", "Path3")
         End If    
         sbb.IntegratedSecurity = False
         sbb.UserID = Trim(LoginTextBox.Text)

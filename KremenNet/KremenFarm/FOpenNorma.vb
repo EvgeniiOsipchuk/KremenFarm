@@ -1,4 +1,6 @@
-﻿Public Class FOpenNorma
+﻿Imports System.IO
+
+Public Class FOpenNorma
 
     Private Sub FOpenNorma_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         Me.Dispose()
@@ -10,7 +12,12 @@
         Dim objBooks As Object
         Dim objSheets As Object
         Dim objSheet As Object
-        Dim DI_day As IO.DirectoryInfo = New IO.DirectoryInfo(My.Settings.OpenCase)
+        Dim DI_day As IO.DirectoryInfo = Nothing
+        If Not File.Exists("Setup.ini") Then
+            DI_day = New IO.DirectoryInfo(My.Settings.OpenCase)
+        Else
+            DI_day = New IO.DirectoryInfo(FConnection.ReadIni("Path", "Path2"))
+        End If
 
         Dim da As New KrDataSetTableAdapters.SP_OpenVidachaTableAdapter
         btn_norm.Text = "Ждите..."
