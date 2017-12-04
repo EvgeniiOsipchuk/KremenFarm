@@ -107,3 +107,42 @@ D:\evo\Documents\Visual Studio 2017\Projects\KremenNet\KremenFarm\obj\x86\Releas
 D:\evo\Documents\Visual Studio 2017\Projects\KremenNet\KremenFarm\obj\x86\Release\KremenFarm.pdb
 D:\evo\Documents\Visual Studio 2017\Projects\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FConnection.resources
 D:\evo\Documents\Visual Studio 2017\Projects\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FConnPass.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\bin\x86\Release\KremenFarm.exe.config
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\bin\x86\Release\KremenFarm.exe
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\bin\x86\Release\KremenFarm.pdb
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\bin\x86\Release\KremenFarm.xml
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\KremenFarm.vbprojResolveAssemblyReference.cache
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FAddDoctor.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FAnaliz.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FAnalizKlient.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FCase.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FConnection.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FConnPass.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FDoctors.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FDoctorType.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FDogovor.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FDogovorAdd.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FInsurCase.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FKlientKard.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FMain.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FMedikament.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FMedOst.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FMKB.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FNorma.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FOpenNorma.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FRepAnaliz.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FRepVidacha.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FSpisPred.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FUpdDBF.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FVidacha.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FVidachaDelit.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FVidachaView.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FKlients.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.LoginForm.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.Resources.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\WindowsApplication1.FRepVostok.resources
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\KremenFarm.vbproj.GenerateResource.Cache
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\KremenFarm.vbproj.CoreCompileInputs.cache
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\KremenFarm.exe
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\KremenFarm.xml
+D:\evo\Documents\GitHub\KremenFarm\KremenNet\KremenFarm\obj\x86\Release\KremenFarm.pdb
