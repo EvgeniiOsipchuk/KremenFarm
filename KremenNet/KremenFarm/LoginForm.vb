@@ -55,4 +55,8 @@ Public Class LoginForm
             PassTextBox.Focus()
         End If
     End Sub
+
+    Private Sub btnSet_Click(sender As Object, e As EventArgs) Handles btnSet.Click
+
+    End Sub
 End Class
