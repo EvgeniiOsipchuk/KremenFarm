@@ -1,0 +1,736 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+KremenFarm
+</name>
+</assembly>
+<members>
+<member name="T:WindowsApplication1.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:WindowsApplication1.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:WindowsApplication1.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_KlientsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_RepAnalizDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_RepVidachaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_CasesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_lpuDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_lechenieDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_doctorsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_otdelDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_diagDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_insurcaseDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_AllVidachByInsurCaseDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_GetMedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_VidachaDetailDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_mkbDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_analizDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_analiz_bolDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_Analiz_klientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_RetAnalizDetailDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_RepPredprDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_RepAptekaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_CheckNaklDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_MedikamentDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_DogovorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_nsi_doctorsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_DoctorTypeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_god_straxDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_PredprDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_god_strax_predprDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_GetPredprDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_OpenVidachaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.CheckConnectionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_AptekiDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_RepVostokDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_KlientsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_RepAnalizRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_RepVidachaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_CasesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_lpuRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_lechenieRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_doctorsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_otdelRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_diagRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_insurcaseRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_AllVidachByInsurCaseRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_GetMedRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_VidachaDetailRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_mkbRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_analizRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_analiz_bolRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_Analiz_klientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_RetAnalizDetailRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_RepPredprRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_RepAptekaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_CheckNaklRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_MedikamentRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_DogovorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_nsi_doctorsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_DoctorTypeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_god_straxRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_PredprRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_god_strax_predprRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_GetPredprRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_OpenVidachaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.CheckConnectionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_AptekiRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_RepVostokRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_KlientsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_RepAnalizRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_RepVidachaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_CasesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_lpuRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_lechenieRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_doctorsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_otdelRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_diagRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_insurcaseRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_AllVidachByInsurCaseRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_GetMedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_VidachaDetailRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_mkbRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_analizRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_analiz_bolRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_Analiz_klientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_RetAnalizDetailRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_RepPredprRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_RepAptekaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_CheckNaklRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_MedikamentRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_DogovorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_nsi_doctorsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_DoctorTypeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_god_straxRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_PredprRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_god_strax_predprRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_GetPredprRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.SP_OpenVidachaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.CheckConnectionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_AptekiRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSet.dt_RepVostokRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.SP_KlientsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.SP_RepAnalizTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.SP_RepVidachaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_CasesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_lpuTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_lechenieTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_doctorsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_otdelTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_diagTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_insurcaseTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_AllVidachByInsurCaseTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_GetMedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_VidachaDetailTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_mkbTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_analizTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_analiz_bolTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_Analiz_klientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_RetAnalizDetailTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_RepPredprTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_RepAptekaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_CheckNaklTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_MedikamentTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_DogovorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_nsi_doctorsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_DoctorTypeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_god_straxTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_PredprTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_god_strax_predprTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.SP_GetPredprTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.SP_OpenVidachaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.da_CheckConnection">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_AptekiTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.dt_RepVostokTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.QueriesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:WindowsApplication1.KrDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApplication1.KrDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:WindowsApplication1.KrDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApplication1.KrDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:WindowsApplication1.KrDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApplication1.KrDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:WindowsApplication1.KrDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:WindowsApplication1.KrDataSetTableAdapters.TableAdapterManager.UpdateAll(WindowsApplication1.KrDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:WindowsApplication1.KrDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

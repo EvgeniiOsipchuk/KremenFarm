@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7FDBE993-C238-4BD8-A20F-6FF218E1ED7C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>KremenFarm</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>опубликовать\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KremenFarm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>KremenFarm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>med_plus.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>KremenFarm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>KremenFarm.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="FAddDoctor.Designer.vb">
+      <DependentUpon>FAddDoctor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FAddDoctor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAnaliz.Designer.vb">
+      <DependentUpon>FAnaliz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FAnaliz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAnalizKlient.Designer.vb">
+      <DependentUpon>FAnalizKlient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FAnalizKlient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCase.Designer.vb">
+      <DependentUpon>FCase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FCase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConnection.Designer.vb">
+      <DependentUpon>FConnection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FConnection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConnPass.Designer.vb">
+      <DependentUpon>FConnPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FConnPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDoctors.Designer.vb">
+      <DependentUpon>FDoctors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FDoctors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDoctorType.Designer.vb">
+      <DependentUpon>FDoctorType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FDoctorType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDogovor.Designer.vb">
+      <DependentUpon>FDogovor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FDogovor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDogovorAdd.Designer.vb">
+      <DependentUpon>FDogovorAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FDogovorAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInsurCase.Designer.vb">
+      <DependentUpon>FInsurCase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FInsurCase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKlientKard.Designer.vb">
+      <DependentUpon>FKlientKard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FKlientKard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMain.Designer.vb">
+      <DependentUpon>FMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMedikament.Designer.vb">
+      <DependentUpon>FMedikament.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FMedikament.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMedOst.Designer.vb">
+      <DependentUpon>FMedOst.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FMedOst.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMKB.Designer.vb">
+      <DependentUpon>FMKB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FMKB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FNorma.Designer.vb">
+      <DependentUpon>FNorma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FNorma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOpenNorma.Designer.vb">
+      <DependentUpon>FOpenNorma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FOpenNorma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRepAnaliz.Designer.vb">
+      <DependentUpon>FRepAnaliz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRepAnaliz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRepVidacha.Designer.vb">
+      <DependentUpon>FRepVidacha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRepVidacha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSpisPred.Designer.vb">
+      <DependentUpon>FSpisPred.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FSpisPred.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUpdDBF.Designer.vb">
+      <DependentUpon>FUpdDBF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FUpdDBF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FVidacha.Designer.vb">
+      <DependentUpon>FVidacha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FVidacha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FVidachaDelit.Designer.vb">
+      <DependentUpon>FVidachaDelit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FVidachaDelit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FVidachaView.Designer.vb">
+      <DependentUpon>FVidachaView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FVidachaView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Global.vb" />
+    <Compile Include="Klients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klients.Designer.vb">
+      <DependentUpon>Klients.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KrDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KrDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KrDataSet.vb">
+      <DependentUpon>KrDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SummaPropis.vb" />
+    <Compile Include="FRepVostok.Designer.vb">
+      <DependentUpon>FRepVostok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRepVostok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FAddDoctor.resx">
+      <DependentUpon>FAddDoctor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAnaliz.resx">
+      <DependentUpon>FAnaliz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAnalizKlient.resx">
+      <DependentUpon>FAnalizKlient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCase.resx">
+      <DependentUpon>FCase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConnection.resx">
+      <DependentUpon>FConnection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConnPass.resx">
+      <DependentUpon>FConnPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDoctors.resx">
+      <DependentUpon>FDoctors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDoctorType.resx">
+      <DependentUpon>FDoctorType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDogovor.resx">
+      <DependentUpon>FDogovor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDogovorAdd.resx">
+      <DependentUpon>FDogovorAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FInsurCase.resx">
+      <DependentUpon>FInsurCase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKlientKard.resx">
+      <DependentUpon>FKlientKard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMain.resx">
+      <DependentUpon>FMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMedikament.resx">
+      <DependentUpon>FMedikament.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMedOst.resx">
+      <DependentUpon>FMedOst.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMKB.resx">
+      <DependentUpon>FMKB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FNorma.resx">
+      <DependentUpon>FNorma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOpenNorma.resx">
+      <DependentUpon>FOpenNorma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRepAnaliz.resx">
+      <DependentUpon>FRepAnaliz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRepVidacha.resx">
+      <DependentUpon>FRepVidacha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSpisPred.resx">
+      <DependentUpon>FSpisPred.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUpdDBF.resx">
+      <DependentUpon>FUpdDBF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FVidacha.resx">
+      <DependentUpon>FVidacha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FVidachaDelit.resx">
+      <DependentUpon>FVidachaDelit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FVidachaView.resx">
+      <DependentUpon>FVidachaView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Klients.resx">
+      <DependentUpon>Klients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrepVostok.resx">
+      <DependentUpon>FRepVostok.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KrDataSet.xsc">
+      <DependentUpon>KrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KrDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KrDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KrDataSet.xss">
+      <DependentUpon>KrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="med_plus.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

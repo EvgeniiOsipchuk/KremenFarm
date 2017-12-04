@@ -1,0 +1,26 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="LastUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="KremenCnStr" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=EVO\MSSQL_EVO;Initial Catalog=KremenFarm;User ID=test1&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=EVO\MSSQL_EVO;Initial Catalog=KremenFarm;User ID=test1</Value>
+    </Setting>
+    <Setting Name="VostokDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Temp\Vostok</Value>
+    </Setting>
+    <Setting Name="OpenCase" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Temp\report</Value>
+    </Setting>
+    <Setting Name="Spis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Temp\report\mail</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
