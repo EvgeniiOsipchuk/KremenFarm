@@ -107,11 +107,8 @@ Public Class FUpdDBF
 
 
     Private Sub cb_pred_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_pred.SelectedIndexChanged
-
-
         dt.Clear()
         lbl_path.Text = ""
-
         If cb_pred.SelectedIndex = 0 Then
             predpr_id = 1 'ДМК
             dogovor = 8
@@ -119,7 +116,6 @@ Public Class FUpdDBF
             predpr_id = 8 'РАКС
             dogovor = 14
         End If
-
         Dim da As New KrDataSetTableAdapters.dt_god_strax_predprTableAdapter
         Dim dt1 As New KrDataSet.dt_god_strax_predprDataTable
         da.Fill(dt1, predpr_id)
@@ -133,48 +129,34 @@ Public Class FUpdDBF
         Dim comm_rab As String = "''"
         Dim id As Long
         Dim proceed As Integer
-
-
         Dim dklients As New DataTable
         Dim foundRows() As DataRow
-
         If dt.Rows.Count = 0 Then
             MessageBox.Show("Файл импорта не выбран или пуст")
             Exit Sub
         End If
-
-
         Dim conn As New SqlConnection(My.Settings.KremenCnStr)
         Dim cmdUvol As New SqlCommand("update klients set comment = " & comm_uvol & " where predpr = " & predpr_id & " and god_strax = " & spin_god_strax.Value.ToString, conn)
-
         Dim cmdUpd As New SqlCommand("update klients set summa_za = summa_za + 20, summa_tr = summa_tr + 10, comment = " & comm_rab & " where id = @id", conn)
         cmdUpd.Parameters.Add("@id", SqlDbType.BigInt)
-
         Dim cmdKlients As New SqlCommand("select id, inn from klients where predpr = " & predpr_id & " and god_strax = " + spin_god_strax.Value.ToString, conn)
-
         conn.Open() 'Соединяемся с sql сервером
         dklients.Load(cmdKlients.ExecuteReader) 'Пихаем в datatable всех клиентов этого предприятия в выбранном страховом году из sql сервера
         cmdUvol.ExecuteNonQuery() 'Увольняем всех работников этого предприятия в выбранном страховом году
-
         With progress
             .Maximum = dt.Rows.Count
             .Minimum = 0
             .Value = 0
             .Visible = True
         End With
-
         proceed = 0
         For Each dr As DataRow In dt.Rows
-
             progress.Value += 1
-
             Me.Refresh()
-
             'Если это голимая пустая строка - просто пропускаем ее
             If Trim(dr("fio").ToString) = "" Then
                 Continue For
             End If
-
             proceed += 1
             'У РАКСА у религиозников поле inn = 0, у ДМК заполнено серией и № паспорта
             'ищем в datatable содержащей инфу из sql сервера строку соответствующую строке из DBF 
@@ -183,13 +165,11 @@ Public Class FUpdDBF
             Else
                 foundRows = dklients.Select("inn = '" & dr("kod").ToString & "'")
             End If
-
             If foundRows.Length <> 0 Then
                 'Если нашли - обновляем сумму платежа и "восстанавливаем" его в работающие
                 id = foundRows(0)("id")
                 cmdUpd.Parameters("@id").Value = id
                 cmdUpd.ExecuteNonQuery()
-
             Else
                 'Если не нашли - добавляем его как вновь принятого
                 inn = dr("kod").ToString
@@ -224,11 +204,8 @@ Public Class FUpdDBF
                                      dogovor, rab, schet, nasled, nasladr, naslrogd, comment, 0, 0, 0, 0, date_dog_begin, date_dog_end,
                                      predpr_id, My.User.Name, status, god_strax)
             End If
-
-
         Next
         MessageBox.Show("OK " & proceed)
-
     End Sub
 
     Private Sub FUpdDBF_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
