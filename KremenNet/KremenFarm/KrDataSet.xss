@@ -33,13 +33,13 @@
     <Shape ID="DesignTable:dt_DoctorType" ZOrder="17" X="500" Y="436" Height="115" Width="123" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
     <Shape ID="DesignTable:dt_god_strax" ZOrder="24" X="637" Y="405" Height="96" Width="207" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="46" />
     <Shape ID="DesignTable:dt_Predpr" ZOrder="20" X="333" Y="495" Height="115" Width="144" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
-    <Shape ID="DesignTable:dt_god_strax_predpr" ZOrder="23" X="637" Y="512" Height="96" Width="226" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="46" />
+    <Shape ID="DesignTable:dt_god_strax_predpr" ZOrder="23" X="637" Y="512" Height="96" Width="263" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="46" />
     <Shape ID="DesignTable:SP_GetPredpr" ZOrder="10" X="787" Y="44" Height="75" Width="129" AdapterExpanded="true" DataTableExpanded="false" OldAdapterHeight="0" OldDataTableHeight="254" SplitterPosition="24" />
     <Shape ID="DesignTable:SP_OpenVidacha" ZOrder="9" X="779" Y="128" Height="96" Width="151" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="45" />
     <Shape ID="DesignTable:CheckConnection" ZOrder="8" X="0" Y="0" Height="30" Width="158" AdapterExpanded="false" DataTableExpanded="true" OldAdapterHeight="84" OldDataTableHeight="0" SplitterPosition="0" />
     <Shape ID="DesignTable:dt_Apteki" ZOrder="7" X="795" Y="237" Height="115" Width="183" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
-    <Shape ID="DesignSources:QueriesTableAdapter" ZOrder="30" X="3" Y="241" Height="371" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="24" SplitterPosition="367" />
     <Shape ID="DesignTable:dt_RepVostok" ZOrder="1" X="917" Y="379" Height="210" Width="226" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="159" />
+    <Shape ID="DesignSources:QueriesTableAdapter" ZOrder="30" X="3" Y="241" Height="371" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="24" SplitterPosition="367" />
   </Shapes>
   <Connectors />
 </DiagramLayout>
