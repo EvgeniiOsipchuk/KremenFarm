@@ -24368,10 +24368,11 @@ Namespace KrDataSetTableAdapters
             CType(Me._commandCollection(8),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@god_strax", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(9) = New Global.System.Data.SqlClient.SqlCommand()
             CType(Me._commandCollection(9),Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(Global.WindowsApplication1.My.MySettings.Default.KremenCnStr)
-            CType(Me._commandCollection(9),Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.SP_UpdateKlient_NET"
+            CType(Me._commandCollection(9),Global.System.Data.SqlClient.SqlCommand).CommandText = "SP_UpdateKlient_NET"
             CType(Me._commandCollection(9),Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
             CType(Me._commandCollection(9),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             CType(Me._commandCollection(9),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@klient_id", Global.System.Data.SqlDbType.BigInt, 8, Global.System.Data.ParameterDirection.Input, 19, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(9),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@inn", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             CType(Me._commandCollection(9),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@fio", Global.System.Data.SqlDbType.NVarChar, 256, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             CType(Me._commandCollection(9),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ceh", Global.System.Data.SqlDbType.NVarChar, 10, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             CType(Me._commandCollection(9),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nazvan", Global.System.Data.SqlDbType.NVarChar, 30, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -25126,6 +25127,7 @@ Namespace KrDataSetTableAdapters
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
         Public Overloads Overridable Function SP_UpdateKlient( _
                     ByVal klient_id As Global.System.Nullable(Of Long),  _
+                    ByVal inn As String,  _
                     ByVal fio As String,  _
                     ByVal ceh As String,  _
                     ByVal nazvan As String,  _
@@ -25152,105 +25154,110 @@ Namespace KrDataSetTableAdapters
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
-            If (fio Is Nothing) Then
+            If (inn Is Nothing) Then
                 command.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(2).Value = CType(fio,String)
+                command.Parameters(2).Value = CType(inn,String)
             End If
-            If (ceh Is Nothing) Then
+            If (fio Is Nothing) Then
                 command.Parameters(3).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(3).Value = CType(ceh,String)
+                command.Parameters(3).Value = CType(fio,String)
             End If
-            If (nazvan Is Nothing) Then
+            If (ceh Is Nothing) Then
                 command.Parameters(4).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(4).Value = CType(nazvan,String)
+                command.Parameters(4).Value = CType(ceh,String)
             End If
-            If (tabnum Is Nothing) Then
+            If (nazvan Is Nothing) Then
                 command.Parameters(5).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(5).Value = CType(tabnum,String)
+                command.Parameters(5).Value = CType(nazvan,String)
+            End If
+            If (tabnum Is Nothing) Then
+                command.Parameters(6).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(6).Value = CType(tabnum,String)
             End If
             If (date_birth.HasValue = true) Then
-                command.Parameters(6).Value = CType(date_birth.Value,Date)
+                command.Parameters(7).Value = CType(date_birth.Value,Date)
             Else
-                command.Parameters(6).Value = Global.System.DBNull.Value
+                command.Parameters(7).Value = Global.System.DBNull.Value
             End If
             If (paspser Is Nothing) Then
-                command.Parameters(7).Value = Global.System.DBNull.Value
+                command.Parameters(8).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(7).Value = CType(paspser,String)
+                command.Parameters(8).Value = CType(paspser,String)
             End If
             If (paspnom.HasValue = true) Then
-                command.Parameters(8).Value = CType(paspnom.Value,Integer)
-            Else
-                command.Parameters(8).Value = Global.System.DBNull.Value
-            End If
-            If (paspdat.HasValue = true) Then
-                command.Parameters(9).Value = CType(paspdat.Value,Date)
+                command.Parameters(9).Value = CType(paspnom.Value,Integer)
             Else
                 command.Parameters(9).Value = Global.System.DBNull.Value
             End If
-            If (kemvidan Is Nothing) Then
-                command.Parameters(10).Value = Global.System.DBNull.Value
+            If (paspdat.HasValue = true) Then
+                command.Parameters(10).Value = CType(paspdat.Value,Date)
             Else
-                command.Parameters(10).Value = CType(kemvidan,String)
+                command.Parameters(10).Value = Global.System.DBNull.Value
             End If
-            If (address Is Nothing) Then
+            If (kemvidan Is Nothing) Then
                 command.Parameters(11).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(11).Value = CType(address,String)
+                command.Parameters(11).Value = CType(kemvidan,String)
             End If
-            If (telefon Is Nothing) Then
+            If (address Is Nothing) Then
                 command.Parameters(12).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(12).Value = CType(telefon,String)
+                command.Parameters(12).Value = CType(address,String)
             End If
-            If (schet Is Nothing) Then
+            If (telefon Is Nothing) Then
                 command.Parameters(13).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(13).Value = CType(schet,String)
+                command.Parameters(13).Value = CType(telefon,String)
             End If
-            If (nasled Is Nothing) Then
+            If (schet Is Nothing) Then
                 command.Parameters(14).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(14).Value = CType(nasled,String)
+                command.Parameters(14).Value = CType(schet,String)
             End If
-            If (nasladr Is Nothing) Then
+            If (nasled Is Nothing) Then
                 command.Parameters(15).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(15).Value = CType(nasladr,String)
+                command.Parameters(15).Value = CType(nasled,String)
+            End If
+            If (nasladr Is Nothing) Then
+                command.Parameters(16).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(16).Value = CType(nasladr,String)
             End If
             If (naslrogd.HasValue = true) Then
-                command.Parameters(16).Value = CType(naslrogd.Value,Date)
-            Else
-                command.Parameters(16).Value = Global.System.DBNull.Value
-            End If
-            If (predpr.HasValue = true) Then
-                command.Parameters(17).Value = CType(predpr.Value,Long)
+                command.Parameters(17).Value = CType(naslrogd.Value,Date)
             Else
                 command.Parameters(17).Value = Global.System.DBNull.Value
             End If
-            If (dogovor.HasValue = true) Then
-                command.Parameters(18).Value = CType(dogovor.Value,Long)
+            If (predpr.HasValue = true) Then
+                command.Parameters(18).Value = CType(predpr.Value,Long)
             Else
                 command.Parameters(18).Value = Global.System.DBNull.Value
             End If
-            If (god_strax.HasValue = true) Then
-                command.Parameters(19).Value = CType(god_strax.Value,Integer)
+            If (dogovor.HasValue = true) Then
+                command.Parameters(19).Value = CType(dogovor.Value,Long)
             Else
                 command.Parameters(19).Value = Global.System.DBNull.Value
             End If
-            If (date_dog_begin.HasValue = true) Then
-                command.Parameters(20).Value = CType(date_dog_begin.Value,Date)
+            If (god_strax.HasValue = true) Then
+                command.Parameters(20).Value = CType(god_strax.Value,Integer)
             Else
                 command.Parameters(20).Value = Global.System.DBNull.Value
             End If
-            If (date_dog_end.HasValue = true) Then
-                command.Parameters(21).Value = CType(date_dog_end.Value,Date)
+            If (date_dog_begin.HasValue = true) Then
+                command.Parameters(21).Value = CType(date_dog_begin.Value,Date)
             Else
                 command.Parameters(21).Value = Global.System.DBNull.Value
+            End If
+            If (date_dog_end.HasValue = true) Then
+                command.Parameters(22).Value = CType(date_dog_end.Value,Date)
+            Else
+                command.Parameters(22).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
             If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _

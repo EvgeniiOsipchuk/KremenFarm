@@ -135,7 +135,7 @@
             '    Me.Close()
             'End If
         Else
-            cmd.SP_UpdateKlient(Globals.ColValueByCurRow(FKlients.g_klients, "id"), Trim(edt_fio.Text), Trim(edt_ceh.Text), Trim(edt_cehname.Text), Trim(edt_tabnum.Text),
+            cmd.SP_UpdateKlient(Globals.ColValueByCurRow(FKlients.g_klients, "id"), Trim(edt_inn.Text), Trim(edt_fio.Text), Trim(edt_ceh.Text), Trim(edt_cehname.Text), Trim(edt_tabnum.Text),
                                  dt_datrog.Value, Trim(edt_paspser.Text), paspnum, dt_paspdate.Value, Trim(edt_kemvidan.Text), Trim(edt_adr.Text), "",
                                  Trim(edt_schet.Text), Trim(edt_naslfio.Text), Trim(edt_nasladr.Text), dt_naslgord.Value, dr(0).Item("predpr_id"), cb_dogovor.SelectedValue, Trim(cb_god_strax.Text),
                                  dt_dogdate.Value, DateAdd(DateInterval.Month, 1, dt_dogdate.Value))
