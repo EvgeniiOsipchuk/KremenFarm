@@ -38,10 +38,6 @@ Public Class FUpdDBF
 
     End Sub
 
-    Private Sub FUpdDBF_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub btn_openDBF_Click(sender As Object, e As EventArgs) Handles btn_openDBF.Click
         Dim ConnectionString As String
 
